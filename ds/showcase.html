@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>USCC Campaign Studio Design System</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-theme="operations-dark">
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">US</div>
+          <div>Campaign Studio</div>
+        </div>
+
+        <div class="nav-group">
+          <div class="nav-label">Workspace</div>
+          <button class="nav-item active">Overview</button>
+          <button class="nav-item">Campaigns</button>
+          <button class="nav-item">Briefs</button>
+          <button class="nav-item">Delivery</button>
+        </div>
+
+        <div class="nav-group">
+          <div class="nav-label">Operations</div>
+          <button class="nav-item">Board</button>
+          <button class="nav-item">Calendar</button>
+          <button class="nav-item">Capacity</button>
+        </div>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <div class="breadcrumb">Campaigns / Board / Core Inactive</div>
+          <div class="topbar-actions">
+            <button class="btn secondary" id="themeToggle">Switch theme</button>
+            <button class="btn primary">New campaign</button>
+          </div>
+        </header>
+
+        <div class="content">
+          <section class="board-wrap">
+            <div class="toolbar">
+              <div class="segment">
+                <button class="active">Board</button>
+                <button>List</button>
+              </div>
+              <input class="search" type="search" value="Search campaigns" aria-label="Search campaigns" />
+              <select class="select" aria-label="Owner filter">
+                <option>Maya Patel</option>
+              </select>
+              <select class="select" aria-label="Business unit filter">
+                <option>CRS</option>
+              </select>
+              <select class="select" aria-label="Channel filter">
+                <option>Email</option>
+              </select>
+            </div>
+
+            <div class="toolbar">
+              <span class="filter-chip">Owner: Maya</span>
+              <span class="filter-chip">Business unit: CRS</span>
+              <span class="filter-chip">Channel: Email</span>
+              <button class="btn tertiary">Clear filters</button>
+            </div>
+
+            <div class="board" aria-label="Campaign board">
+              <div class="column">
+                <div class="column-header">
+                  <span>Draft</span>
+                  <span class="count-badge">12</span>
+                </div>
+
+                <article class="campaign-card selected">
+                  <div class="card-top">
+                    <div>
+                      <div class="id">MPP-20031</div>
+                    </div>
+                    <span class="badge warning">Needs attention</span>
+                  </div>
+                  <h3 class="title">Core Inactive</h3>
+                  <div class="muted">Owner: Maya Patel</div>
+                  <div class="meta-grid">
+                    <span>Channel</span>
+                    <strong>Email</strong>
+                    <span>Deploy</span>
+                    <strong>Mar 12</strong>
+                    <span>Blocker</span>
+                    <strong>Creative hand-off pending</strong>
+                  </div>
+                </article>
+
+                <article class="campaign-card">
+                  <div class="card-top">
+                    <div>
+                      <div class="id">MPP-20044</div>
+                    </div>
+                    <span class="badge success">On track</span>
+                  </div>
+                  <h3 class="title">Spring Revenue Push</h3>
+                  <div class="muted">Owner: Priya Shah</div>
+                  <div class="meta-grid">
+                    <span>Channel</span>
+                    <strong>Paid social</strong>
+                    <span>Deploy</span>
+                    <strong>Apr 02</strong>
+                    <span>Next action</span>
+                    <strong>Audience review</strong>
+                  </div>
+                </article>
+              </div>
+
+              <div class="column">
+                <div class="column-header">
+                  <span>Submitted</span>
+                  <span class="count-badge">18</span>
+                </div>
+
+                <article class="campaign-card">
+                  <div class="card-top">
+                    <div><div class="id">MPP-20102</div></div>
+                    <span class="badge info">Approved</span>
+                  </div>
+                  <h3 class="title">Retention Lift</h3>
+                  <div class="muted">Owner: Oscar Lee</div>
+                  <div class="meta-grid">
+                    <span>Channel</span><strong>CRM</strong>
+                    <span>Deploy</span><strong>Mar 23</strong>
+                    <span>Next action</span><strong>Finalize segments</strong>
+                  </div>
+                </article>
+              </div>
+
+              <div class="column">
+                <div class="column-header">
+                  <span>Channel Requirements</span>
+                  <span class="count-badge">7</span>
+                </div>
+
+                <article class="campaign-card blocked">
+                  <div class="card-top">
+                    <div><div class="id">MPP-20031</div></div>
+                    <span class="badge danger">Blocked</span>
+                  </div>
+                  <h3 class="title">Core Inactive</h3>
+                  <div class="muted">Owner: Maya Patel</div>
+                  <div class="meta-grid">
+                    <span>Stage</span><strong>Channel Requirements</strong>
+                    <span>Health</span><strong>Needs attention</strong>
+                    <span>Blocker</span><strong>Creative hand-off pending</strong>
+                  </div>
+                </article>
+              </div>
+
+              <div class="column">
+                <div class="column-header">
+                  <span>Execution Ready</span>
+                  <span class="count-badge">9</span>
+                </div>
+
+                <article class="campaign-card">
+                  <div class="card-top">
+                    <div><div class="id">MPP-20078</div></div>
+                    <span class="badge success">Ready</span>
+                  </div>
+                  <h3 class="title">Lifecycle Nurture</h3>
+                  <div class="muted">Owner: Jordan Kim</div>
+                  <div class="meta-grid">
+                    <span>Channel</span><strong>Lifecycle</strong>
+                    <span>Deploy</span><strong>Apr 08</strong>
+                    <span>Next action</span><strong>QA approval</strong>
+                  </div>
+                </article>
+              </div>
+
+              <div class="column">
+                <div class="column-header">
+                  <span>Deployed</span>
+                  <span class="count-badge">4</span>
+                </div>
+
+                <article class="campaign-card">
+                  <div class="card-top">
+                    <div><div class="id">MPP-20120</div></div>
+                    <span class="badge success">Live</span>
+                  </div>
+                  <h3 class="title">Partner Launch</h3>
+                  <div class="muted">Owner: Tina Ruiz</div>
+                  <div class="meta-grid">
+                    <span>Channel</span><strong>Display</strong>
+                    <span>Deploy</span><strong>Mar 10</strong>
+                    <span>Next action</span><strong>Monitor performance</strong>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+
+          <aside class="ai-panel">
+            <div class="assistant-header">
+              <div style="display:flex; align-items:center; gap:10px;">
+                <div class="assistant-avatar">J</div>
+                <div>
+                  <strong>Ask Little Joe</strong><br />
+                  <span class="muted">Demo AI</span>
+                </div>
+              </div>
+              <span class="badge info">Campaign: MPP-20031</span>
+            </div>
+
+            <div class="message assistant">
+              Creative hand-off is pending for this campaign. I recommend reviewing the latest email asset and confirming the deployment date before moving it to execution ready.
+            </div>
+
+            <div class="message user">
+              Which campaigns need attention?
+            </div>
+
+            <div class="prompt-list">
+              <button class="prompt-pill">Review blockers</button>
+              <button class="prompt-pill">Explain health</button>
+              <button class="prompt-pill">Suggest next step</button>
+            </div>
+
+            <textarea class="textarea" aria-label="Ask Little Joe">Ask about campaign blockers</textarea>
+            <div style="margin-top: 12px; display:flex; gap:10px;">
+              <button class="btn primary">Send</button>
+              <button class="btn secondary">Review action</button>
+            </div>
+          </aside>
+        </div>
+      </main>
+    </div>
+
+    <script>
+      const root = document.body;
+      const button = document.getElementById('themeToggle');
+      button.addEventListener('click', () => {
+        const next = root.getAttribute('data-theme') === 'operations-dark' ? 'studio-light' : 'operations-dark';
+        root.setAttribute('data-theme', next);
+      });
+    </script>
+  </body>
+</html>
